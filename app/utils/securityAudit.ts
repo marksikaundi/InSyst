@@ -45,7 +45,7 @@ function checkOpenPorts(hostname: string): Promise<number[]> {
         hostname,
         port,
         method: 'HEAD',
-      }, (res) => {
+      }, () => {
         openPorts.push(port)
         if (++completed === portsToCheck.length) resolve(openPorts)
       })

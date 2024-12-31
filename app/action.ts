@@ -22,7 +22,7 @@ export async function performAudit(formData: FormData) {
   }
 }
 
-function generateReport(url: string, results: any) {
+function generateReport(url: string, results: Record<string, unknown>) {
   return `
 Security Audit Report for ${url}
 
