@@ -28,7 +28,7 @@ Security Audit Report for ${url}
 
 ${Object.entries(results).map(([key, value]) => `${key}: ${value}`).join('\n')}
 
-This is a basic security audit. For a more comprehensive analysis, please consult with a cybersecurity professional.
+This is a security report audit for ${url}. For a more comprehensive analysis, please consult with a cybersecurity professional.
   `.trim()
 }
 
