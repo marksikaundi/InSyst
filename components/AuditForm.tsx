@@ -4,8 +4,9 @@ import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { performAudit } from '../action'
+
 import { toast } from '@/hooks/use-toast'
+import { performAudit } from '@/app/action'
 
 export default function AuditForm() {
   const [isLoading, setIsLoading] = useState(false)
