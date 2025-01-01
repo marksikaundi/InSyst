@@ -60,7 +60,7 @@ export default function Hero() {
                 href="#"
                 className="inline-flex justify-center items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 font-medium hover:border-gray-600 hover:text-gray-200 transition-colors"
               >
-                Documentation
+                Contribute
                 <svg
                   className="ml-2 w-4 h-4"
                   fill="none"
