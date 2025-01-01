@@ -76,34 +76,23 @@ export default function Navbar() {
                 Features
               </Link>
               <Link
-                href="/company"
+                href="/contribute"
                 className="block px-3 py-2 text-gray-300 hover:text-white"
               >
-                Company
+                Contribute
               </Link>
               <Link
-                href="/resources"
+                href="/about"
                 className="block px-3 py-2 text-gray-300 hover:text-white"
               >
-                Resources
+                About
               </Link>
-              <Link
-                href="/docs"
-                className="block px-3 py-2 text-gray-300 hover:text-white"
-              >
-                Docs
-              </Link>
-              <Link
-                href="/pricing"
-                className="block px-3 py-2 text-gray-300 hover:text-white"
-              >
-                Pricing
-              </Link>
+              
               <div className="pt-4 flex flex-col space-y-2">
                 <Button variant="ghost" className="justify-start">
                   Sign in
                 </Button>
-                <Button variant="secondary">Get Started</Button>
+                <Button variant="secondary">Try now</Button>
               </div>
             </div>
           </div>
