@@ -28,7 +28,7 @@ export default function Hero() {
 
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight">
-                Tool for developers
+                A tool for developers
               </h1>
               <div className="space-y-2 text-gray-400 text-lg sm:text-xl">
                 <p>The best way to check if your website has vulnerability.</p>
