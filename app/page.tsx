@@ -28,11 +28,11 @@ export default function Hero() {
 
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight">
-                Email for developers
+                Tool for developers
               </h1>
               <div className="space-y-2 text-gray-400 text-lg sm:text-xl">
-                <p>The best way to reach humans instead of spam folders.</p>
-                <p>Deliver transactional and marketing emails at scale.</p>
+                <p>The best way to check if your website has vulnerability.</p>
+                <p>Report is delivered direct to your email of your choice.</p>
               </div>
             </div>
 
