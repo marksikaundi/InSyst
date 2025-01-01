@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex">
+            {/* <div className="inline-flex">
               <a
                 href="#"
                 className="inline-flex items-center gap-2 text-sm bg-gradient-to-r from-purple-500/10 to-purple-500/20 text-purple-300 px-4 py-2 rounded-full hover:from-purple-500/20 hover:to-purple-500/30 transition-colors"
@@ -24,7 +24,7 @@ export default function Hero() {
                   />
                 </svg>
               </a>
-            </div>
+            </div> */}
 
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight">
