@@ -38,7 +38,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#"
+                href="/try-now"
                 className="inline-flex justify-center items-center px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-gray-100 transition-colors"
               >
                 Try now
