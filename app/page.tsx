@@ -41,7 +41,7 @@ export default function Hero() {
                 href="#"
                 className="inline-flex justify-center items-center px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-gray-100 transition-colors"
               >
-                Get Started
+                Try now
                 <svg
                   className="ml-2 w-4 h-4"
                   fill="none"
