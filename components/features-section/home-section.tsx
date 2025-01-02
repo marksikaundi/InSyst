@@ -56,7 +56,7 @@ export default function HomeSection() {
               onClick={handleContribute}
               size="lg"
               variant="ghost"
-              className="text-white hover:bg-white/10"
+              className="text-white hover:text-white hover:bg-black"
             >
               Contribute <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
