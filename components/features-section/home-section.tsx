@@ -1,0 +1,65 @@
+'use client'
+
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from 'lucide-react'
+import Image from "next/image"
+
+export default function HomeSection() {
+  return (
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+      <div className="container mx-auto px-4 pt-16 md:pt-24 pb-[300px] sm:pb-[400px] md:pb-40 relative z-10">
+        {/* Announcement Banner */}
+        <div className="inline-flex mb-8 md:mb-12">
+          <a
+            href="#"
+            className="text-xs md:text-sm bg-gradient-to-r from-emerald-400/10 to-purple-400/10 text-white/90 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-white/10 hover:border-white/20 transition-colors"
+          >
+            Announcing our Series A <ArrowRight className="inline-block ml-2 h-3 md:h-4 w-3 md:w-4" />
+          </a>
+        </div>
+
+        {/* Main Content */}
+        <div className="max-w-2xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight mb-6 md:mb-8">
+            Email for developers
+          </h1>
+          <div className="space-y-3 md:space-y-4 mb-8 md:mb-12">
+            <p className="text-lg md:text-xl text-gray-400">
+              The best way to reach humans instead of spam folders.
+            </p>
+            <p className="text-lg md:text-xl text-gray-400">
+              Deliver transactional and marketing emails at scale.
+            </p>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-stretch sm:items-center">
+            <Button size="lg" className="bg-white text-black hover:bg-gray-100">
+              Get Started <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button
+              size="lg"
+              variant="ghost"
+              className="text-white hover:bg-white/10"
+            >
+              Documentation <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Cube Image */}
+      <div className="absolute bottom-0 left-1/2 md:top-1/2 md:right-0 md:left-auto transform -translate-x-1/2 md:-translate-y-1/2 md:translate-x-1/4 w-full md:w-auto">
+        <Image
+          src="/placeholder.svg?height=600&width=600"
+          alt="3D Cube Visualization"
+          width={600}
+          height={600}
+          className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] object-contain opacity-30 md:opacity-100"
+          priority
+        />
+      </div>
+    </div>
+  )
+}
+
