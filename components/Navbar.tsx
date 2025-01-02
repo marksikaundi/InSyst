@@ -5,9 +5,20 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push("/try-now");
+  };
+
+  const handleOurStory = () => {
+    router.push("/our-story");
+  };
 
   return (
     <nav className="bg-black text-white">
@@ -38,12 +49,15 @@ export default function Navbar() {
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex md:items-center md:space-x-4">
             <Button
+              onClick={handleOurStory}
               variant="ghost"
               className="text-gray-300 hover:text-white bg-black hover:bg-black "
             >
               Our Story
             </Button>
-            <Button variant="secondary">Try now</Button>
+            <Button onClick={handleRedirect} variant="secondary">
+              Try now
+            </Button>
           </div>
 
           {/* Mobile menu button */}
