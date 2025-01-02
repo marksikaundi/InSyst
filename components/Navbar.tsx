@@ -1,14 +1,13 @@
-'use client'
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { Menu, X } from 'lucide-react'
+import * as React from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <nav className="bg-black text-white">
@@ -23,10 +22,6 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            
-
-           
-
             <Link href="/features" className="text-gray-300 hover:text-white">
               Features
             </Link>
@@ -42,8 +37,11 @@ export default function Navbar() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex md:items-center md:space-x-4">
-            <Button variant="ghost" className="text-gray-300 hover:text-white">
-              Sign in
+            <Button
+              variant="ghost"
+              className="text-gray-300 hover:text-white bg-black hover:bg-black "
+            >
+              Our Story
             </Button>
             <Button variant="secondary">Try now</Button>
           </div>
@@ -87,10 +85,13 @@ export default function Navbar() {
               >
                 About
               </Link>
-              
+
               <div className="pt-4 flex flex-col space-y-2">
-                <Button variant="ghost" className="justify-start">
-                  Sign in
+                <Button
+                  variant="ghost"
+                  className="justify-start  bg-black hover:bg-black  "
+                >
+                  Our Story
                 </Button>
                 <Button variant="secondary">Try now</Button>
               </div>
@@ -99,6 +100,5 @@ export default function Navbar() {
         )}
       </div>
     </nav>
-  )
+  );
 }
-
