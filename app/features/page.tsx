@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -12,7 +14,6 @@ export default function Features() {
     router.push("/contribute");
   };
 
-  
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center text-center px-4">
       <div className="mb-16">
