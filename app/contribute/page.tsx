@@ -35,6 +35,8 @@ export default function Contribute() {
             WebAudit platform
           </h1>
 
+          
+
           {/* How you can contribute to WebAudit */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
             WebAudit is an open-source project and we welcome contributions from
@@ -43,13 +45,13 @@ export default function Contribute() {
           </p>
 
           {/* List of ways to contribute */}
-          <ul className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            <li>Improving the documentation</li>
-            <li>Fixing bugs</li>
-            <li>Adding new features</li>
-            <li>Testing the platform</li>
-            <li>Reporting issues</li>
-          </ul>
+            <ul className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto list-disc list-inside leading-relaxed">
+                <li>Submitting bug reports and feature requests</li>
+                <li>Writing documentation and tutorials</li>
+                <li>Improving the platform&apos;s codebase</li>
+                <li>Creating new features and tools</li>
+                <li>Helping with testing and quality assurance</li>
+            </ul>
 
           {/* What you need when contributing to WebAudit */}
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
