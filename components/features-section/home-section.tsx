@@ -1,10 +1,20 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from 'lucide-react'
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function HomeSection() {
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push("/try-now");
+  };
+  const handleContribute = () => {
+    router.push("/contribute");
+  };
+
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
       <div className="container mx-auto px-4 pt-16 md:pt-24 pb-[300px] sm:pb-[400px] md:pb-40 relative z-10">
@@ -14,35 +24,41 @@ export default function HomeSection() {
             href="#"
             className="text-xs md:text-sm bg-gradient-to-r from-emerald-400/10 to-purple-400/10 text-white/90 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-white/10 hover:border-white/20 transition-colors"
           >
-            Announcing our Series A <ArrowRight className="inline-block ml-2 h-3 md:h-4 w-3 md:w-4" />
+            Announcing our Series A{" "}
+            <ArrowRight className="inline-block ml-2 h-3 md:h-4 w-3 md:w-4" />
           </a>
         </div>
 
         {/* Main Content */}
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight mb-6 md:mb-8">
-            Email for developers
+            Tool for developers
           </h1>
           <div className="space-y-3 md:space-y-4 mb-8 md:mb-12">
             <p className="text-lg md:text-xl text-gray-400">
-              The best way to reach humans instead of spam folders.
+              The best way to web audit instead of shipping with bugs.
             </p>
             <p className="text-lg md:text-xl text-gray-400">
-              Deliver transactional and marketing emails at scale.
+              Report is delivered direct to your email of your choice.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 items-stretch sm:items-center">
-            <Button size="lg" className="bg-white text-black hover:bg-gray-100">
-              Get Started <ArrowRight className="ml-2 h-4 w-4" />
+            <Button
+              onClick={handleRedirect}
+              size="lg"
+              className="bg-white text-black hover:bg-gray-100"
+            >
+              Try now <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button
+              onClick={handleContribute}
               size="lg"
               variant="ghost"
               className="text-white hover:bg-white/10"
             >
-              Documentation <ArrowRight className="ml-2 h-4 w-4" />
+              Contribute <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
@@ -60,6 +76,5 @@ export default function HomeSection() {
         />
       </div>
     </div>
-  )
+  );
 }
-
