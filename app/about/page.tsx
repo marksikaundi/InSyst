@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function About() {
   return (
@@ -70,7 +69,7 @@ export default function About() {
           </p>
 
           {/* CTA */}
-          <Link
+          {/* <Link
             href="/try-now"
             className=" inline-flex justify-center items-center px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-gray-100 transition-colors"
           >
@@ -88,12 +87,10 @@ export default function About() {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </Link>
-
+          </Link> */}
 
           {/* Buttom margin */}
           <div className="mt-30" />
-
         </div>
       </div>
     </div>
