@@ -11,14 +11,7 @@ const HighlightedText: React.FC<HighlightedTextProps> = ({
 export default function OurStory() {
   return (
     <section className="bg-black min-h-screen flex items-center justify-center px-4 py-16">
-      {/* Starry background pattern */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 2px)`,
-          backgroundSize: "30px 30px",
-        }}
-      />
+     
       <div className="max-w-2xl mx-auto space-y-12">
         <h2 className="text-white text-4xl md:text-5xl font-medium text-center mb-16">
           Our story
