@@ -1,30 +1,32 @@
+"use client";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 text-center">
-        <div>
-          <h1 className="text-9xl font-extrabold text-gray-900">404</h1>
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">
-            Page not found
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Oops! The page you&apos;re looking for doesn&apos;t exist.
-          </p>
-        </div>
-        <div className="mt-8">
-          <Link href="/">
-            <Button className="bg-[#2D1537] hover:bg-[#2D1537] ">
-              Return to Home
-            </Button>
+    <div className="flex flex-col mt-28 justify-center items-center">
+      <div className="w-full items-center flex flex-col mb-4">
+        <Image src="/404.svg" width={300} height={300} alt="404" />
+      </div>
+      <div className="items-center ">
+        <p className="text-4xl mt-4 text-[#2D1537]">
+          Oops! The page you are looking for does not exist.
+        </p>
+        <p className="text-2xl mt-2 text-[#2D1537]">
+          You may have mistyped the address or the page may have moved.
+        </p>
+      </div>
+      <div className="mt-8">
+        <Button
+          className="text-gray-300 hover:text-white bg-black hover:bg-black "
+          variant="ghost"
+        >
+          <Link  href="/">
+            Go Home
           </Link>
-        </div>
+        </Button>
       </div>
     </div>
   );
 }
-
-
-
