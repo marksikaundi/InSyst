@@ -6,18 +6,18 @@ interface HighlightedTextProps {
 const HighlightedText: React.FC<HighlightedTextProps> = ({
   children,
   className = "",
-}) => <span className={`text-white ${className}`}>{children}</span>;
+}) => <span className={`text-black font-bold ${className}`}>{children}</span>;
 
 export default function OurStory() {
   return (
-    <section className="bg-black min-h-screen flex items-center justify-center px-4 py-16">
+    <section className=" min-h-screen flex items-center justify-center px-4 py-16">
      
       <div className="max-w-2xl mx-auto space-y-12">
-        <h2 className="text-white text-4xl md:text-5xl font-medium text-center mb-16">
+        <h2 className="text-black text-4xl md:text-5xl font-medium text-center mb-16">
           Our story
         </h2>
 
-        <div className="space-y-8 text-gray-400 text-lg md:text-xl leading-relaxed">
+        <div className="space-y-8 text-black text-lg md:text-xl leading-relaxed">
           <p>
             WebAudit started with an{" "}
             <HighlightedText>idea to make website security</HighlightedText>{" "}
