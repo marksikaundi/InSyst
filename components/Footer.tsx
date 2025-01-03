@@ -73,29 +73,16 @@ export default function Footer() {
             <h5 className="mb-4 font-bold">Support us</h5>
             <div className="mt-8">
               <Button className="bg-[#F3A833] hover:bg-[#F3A833]">
-                <FcDonate className="mr-2"  />
-
+                <FcDonate className="mr-2" />
                 Donate
               </Button>
             </div>
-            {/* <div className="pt-5">
-              <Button className="border border-[#F3A833] ">
-                <Link href="/careers" className="p-2">
-                  Careers
-                </Link>
-                <span className="relative flex h-4 w-4">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2D1537] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
-                </span>
-              </Button>
-            </div> */}
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-between border-t border-gray-600 py-6 md:flex-row">
           <div className="flex items-center space-x-4">
             <Link href="https://twitter.com/Lupleg_Dev">
               <FaXTwitter className="text-white" />
-
             </Link>
             <Link href="https://facebook.com/lupleg">
               <FaFacebook className="text-white" />
@@ -110,16 +97,6 @@ export default function Footer() {
           <div className="mt-4 text-center md:mt-0 md:text-left">
             <p>© Copyright {new Date().getFullYear()}, All Rights Reserved</p>
           </div>
-        </div>
-        <div className="mt-4 text-center text-xs text-white">
-          <p>
-            Disclaimer: The programs, courses, and opportunities described on
-            this website are based on real offerings. However, any images or
-            photographs used are for illustrative purposes only and do not
-            represent actual participants or individuals involved. We take this
-            step to protect the privacy of those associated with the programs we
-            offer.
-          </p>
         </div>
       </footer>
     </div>
