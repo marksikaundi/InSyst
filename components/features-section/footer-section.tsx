@@ -4,12 +4,12 @@ export default function FooterSection() {
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Lupleg is open source and 100% free.
+          WebAudit is open source and 100% free.
         </h2>
         <p className="text-gray-300 text-sm md:text-base">
-          Help us provide opportunity for people of all backgrounds by helping
-          them develop their programming skills through code practice and
-          mentorship.
+          We are committed to providing the best tools to help you grow your
+          business. If you like our work, please support us by donating towards
+          our development of WebAudit.
         </p>
       </div>
 
