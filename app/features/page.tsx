@@ -15,7 +15,7 @@ export default function Features() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center justify-center text-center px-4">
+    <div className="min-h-screen  flex flex-col items-center justify-center text-center px-4">
       <div className="mb-16">
         <Image
           src="/placeholder.svg"
@@ -27,7 +27,7 @@ export default function Features() {
         <h1 className="text-white text-5xl md:text-7xl font-medium mb-4 tracking-tight">
           Now Audit <span className="italic">just</span> works
         </h1>
-        <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+        <p className="text-black text-lg md:text-xl max-w-2xl mx-auto mb-8">
           WebAudit is the modern audit platform that you&apos;ve been waiting
           for. It&apos;s fast, reliable, and packed with features that
           you&apos;ll love.
@@ -36,7 +36,7 @@ export default function Features() {
           <Button
             onClick={handleRedirect}
             size="lg"
-            className="bg-white text-black hover:bg-gray-100 rounded-full px-8"
+            className="bg-black text-white hover:bg-black rounded-full px-8"
           >
             Try now
           </Button>
@@ -44,7 +44,7 @@ export default function Features() {
             onClick={handleContribute}
             variant="link"
             size="lg"
-            className="text-gray-400 hover:text-white"
+            className="text-black hover:text-black"
           >
             Contribute →
           </Button>
