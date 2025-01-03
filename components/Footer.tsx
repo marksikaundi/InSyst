@@ -78,7 +78,7 @@ export default function Footer() {
                 Donate
               </Button>
             </div>
-            <div className="pt-5">
+            {/* <div className="pt-5">
               <Button className="border border-[#F3A833] ">
                 <Link href="/careers" className="p-2">
                   Careers
@@ -88,7 +88,7 @@ export default function Footer() {
                   <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
                 </span>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-between border-t border-gray-600 py-6 md:flex-row">
