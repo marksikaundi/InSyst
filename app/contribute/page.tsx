@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contribute() {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
       {/* Starry background pattern */}
       <div
         className="absolute inset-0"
@@ -29,32 +29,30 @@ export default function Contribute() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium text-white tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium text-black tracking-tight leading-tight">
             Contribute to the modern
             <br />
             WebAudit platform
           </h1>
 
-          
-
           {/* How you can contribute to WebAudit */}
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-black max-w-3xl mx-auto leading-relaxed">
             WebAudit is an open-source project and we welcome contributions from
             the community. There are many ways you can contribute to WebAudit,
             including:
           </p>
 
           {/* List of ways to contribute */}
-            <ul className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto list-disc list-inside leading-relaxed">
-                <li>Submitting bug reports and feature requests</li>
-                <li>Writing documentation and tutorials</li>
-                <li>Improving the platform&apos;s codebase</li>
-                <li>Creating new features and tools</li>
-                <li>Helping with testing and quality assurance</li>
-            </ul>
+          <ul className="text-lg md:text-xl text-black max-w-3xl mx-auto list-disc list-inside leading-relaxed">
+            <li>Submitting bug reports and feature requests</li>
+            <li>Writing documentation and tutorials</li>
+            <li>Improving the platform&apos;s codebase</li>
+            <li>Creating new features and tools</li>
+            <li>Helping with testing and quality assurance</li>
+          </ul>
 
           {/* What you need when contributing to WebAudit */}
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-black max-w-3xl mx-auto leading-relaxed">
             To contribute to WebAudit, you will need a basic understanding of
             web development and experience with Git. You will also need to be
             familiar with the technologies used in the platform, including
@@ -62,7 +60,7 @@ export default function Contribute() {
           </p>
 
           {/* what you should not do */}
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-black max-w-3xl mx-auto leading-relaxed">
             When contributing to WebAudit, please do not submit any code that
             contains security vulnerabilities or that is not well-tested. We
             want to ensure that the platform is secure and reliable for all
@@ -72,7 +70,7 @@ export default function Contribute() {
           {/* CTA */}
           <Link
             href="#/try-now"
-            className=" inline-flex justify-center items-center px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-gray-100 transition-colors"
+            className=" inline-flex justify-center items-center px-6 py-3 rounded-full bg-black text-white font-medium hover:bg-black transition-colors"
           >
             Check us
             <svg
