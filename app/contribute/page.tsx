@@ -19,7 +19,7 @@ export default function Contribute() {
           {/* Logo */}
           <div className="w-32 h-32 mx-auto mb-12 relative">
             <Image
-              src="/placeholder.svg"
+              src="/sample.svg"
               alt="WebAudit Logo"
               width={128}
               height={128}

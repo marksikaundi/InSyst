@@ -18,7 +18,7 @@ export default function Features() {
     <div className="min-h-screen  flex flex-col items-center justify-center text-center px-4">
       <div className="mb-16">
         <Image
-          src="/placeholder.svg"
+          src="/sample.svg"
           alt="WebAudit Logo"
           width={80}
           height={80}
