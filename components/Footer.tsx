@@ -11,9 +11,9 @@ const footerData = [
     title: "Legal",
     links: [
       { name: "About us", path: "/about" },
-      { name: "Terms", path: "/terms" },
-      { name: "Privacy Policy", path: "/privacy" },
-      { name: "FAQ", path: "/faq" },
+      { name: "Terms", path: "/lega/terms" },
+      { name: "Privacy Policy", path: "/legal/privacy" },
+      { name: "FAQ", path: "/legal/faq" },
     ],
   },
   {
