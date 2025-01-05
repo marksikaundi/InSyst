@@ -8,7 +8,7 @@ import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const footerData = [
   {
-    title: "Company",
+    title: "Legal",
     links: [
       { name: "About us", path: "/about" },
       { name: "Terms", path: "/terms" },
