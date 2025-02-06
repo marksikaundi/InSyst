@@ -79,7 +79,7 @@ export default function Footer() {
             <Link href="https://linkedin.com/school/lupleg">
               <FaLinkedinIn className="text-white" />
             </Link>
-            <Link href="https://github.com/lupleg">
+            <Link href="https://github.com/marksikaundi/WebAudit">
               <FaGithub className="text-white" />
             </Link>
           </div>
