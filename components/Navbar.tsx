@@ -1,118 +1,42 @@
-"use client";
-
-import * as React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-
-export default function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const router = useRouter();
-
-  const handleRedirect = () => {
-    router.push("/try-now");
-  };
-
-  const handleOurStory = () => {
-    router.push("/our-story");
-  };
-
+export default function Nav() {
   return (
-    <nav className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-semibold">
-              WebAudit
+    <div className=" ">
+      <header className="container mx-auto px-4">
+        <nav className="flex items-center justify-between py-4">
+          <div className="flex items-center gap-8">
+            <Link href="/" className="flex items-center">
+              {/* FOR A LOGO IMAGE USE THESE */}
+              {/* <Image
+                src="/xlogo.svg"
+                alt="Lupleg Logo"
+                width={150}
+                height={100}
+                className="h-12 w-auto"
+              /> */}
+              <h2 className="h-12 w-auto text-black font-bold mt-2 text-lg">
+                WebAudit
+              </h2>
             </Link>
           </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link href="/features" className="text-gray-300 hover:text-white">
+          <div className="flex items-center gap-4">
+            <Link
+              href="/features"
+              className="text-black hover:text-black text-md  hidden md:block"
+            >
               Features
             </Link>
 
-            <Link href="/contribute" className="text-gray-300 hover:text-white">
-              Contribute
-            </Link>
-
-            <Link href="/about" className="text-gray-300 hover:text-white">
-              About
-            </Link>
-          </div>
-
-          {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex md:items-center md:space-x-4">
-            <Button
-              onClick={handleOurStory}
-              variant="ghost"
-              className="text-gray-300 hover:text-white bg-black hover:bg-black "
+            <Link
+              href="/try-now"
+              className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 text-md font-medium text-white hover:bg-black"
             >
-              Our Story
-            </Button>
-            <Button onClick={handleRedirect} variant="secondary">
-              Try now
-            </Button>
+              Try now free
+            </Link>
           </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-            >
-              {isOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </Button>
-          </div>
-        </div>
-
-        {/* Mobile menu */}
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link
-                href="/features"
-                className="block px-3 py-2 text-gray-300 hover:text-white"
-              >
-                Features
-              </Link>
-              <Link
-                href="/contribute"
-                className="block px-3 py-2 text-gray-300 hover:text-white"
-              >
-                Contribute
-              </Link>
-              <Link
-                href="/about"
-                className="block px-3 py-2 text-gray-300 hover:text-white"
-              >
-                About
-              </Link>
-
-              <div className="pt-4 flex flex-col space-y-2">
-                <Button
-                  variant="ghost"
-                  className="justify-start  bg-black hover:bg-black  "
-                >
-                  Our Story
-                </Button>
-                <Button variant="secondary">Try now</Button>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-    </nav>
+        </nav>
+      </header>
+    </div>
   );
 }

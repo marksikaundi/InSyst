@@ -8,32 +8,21 @@ import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const footerData = [
   {
-    title: "Legal",
+    title: "Company",
     links: [
       { name: "About us", path: "/about" },
-      { name: "Terms", path: "/terms" },
-      { name: "Privacy Policy", path: "/privacy" },
-      { name: "FAQ", path: "/faq" },
+      { name: "Contribute", path: "/contribute" },
+      { name: "Features", path: "/features" },
+      { name: "Our Story", path: "/our-story" },
     ],
   },
   {
-    title: "Links",
+    title: "Legal",
     links: [
-      { name: "Challenge", path: "#" },
-      { name: "Affiliates", path: "#" },
-      { name: "Partner with Us", path: "#" },
-      { name: "Research", path: "#" },
-      { name: "Changelog", path: "#" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { name: "Books", path: "#" },
-      { name: "Sitemap", path: "#" },
-      { name: "Tips", path: "#" },
-      { name: "Projects", path: "#" },
-      { name: "Docs", path: "#" },
+      { name: "Terms", path: "/lega/terms" },
+      { name: "Privacy Policy", path: "/legal/privacy" },
+      { name: "Cookies", path: "/cookies" },
+      { name: "FAQ", path: "/lega/faq" },
     ],
   },
 ];
@@ -90,7 +79,7 @@ export default function Footer() {
             <Link href="https://linkedin.com/school/lupleg">
               <FaLinkedinIn className="text-white" />
             </Link>
-            <Link href="https://github.com/lupleg">
+            <Link href="https://github.com/marksikaundi/WebAudit">
               <FaGithub className="text-white" />
             </Link>
           </div>
