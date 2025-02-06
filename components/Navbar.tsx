@@ -1,34 +1,36 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Nav() {
   return (
-    <div className="bg-black ">
+    <div className=" ">
       <header className="container mx-auto px-4">
         <nav className="flex items-center justify-between py-4">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center">
-              <Image
+              {/* FOR A LOGO IMAGE USE THESE */}
+              {/* <Image
                 src="/xlogo.svg"
                 alt="Lupleg Logo"
                 width={150}
                 height={100}
                 className="h-12 w-auto"
-              />
+              /> */}
+              <h2 className="h-12 w-auto text-black font-bold mt-2 text-lg">
+                WebAudit
+              </h2>
             </Link>
-            
           </div>
           <div className="flex items-center gap-4">
             <Link
               href="/premium"
-              className="text-white/80 hover:text-white hidden md:block"
+              className="text-black hover:text-black  hidden md:block"
             >
               Contribute
             </Link>
-            
+
             <Link
               href="#"
-              className="inline-flex h-9 items-center justify-center rounded-md bg-white px-4 text-sm font-medium text-[#2D1537] hover:bg-white/90"
+              className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 text-sm font-medium text-white hover:bg-black"
             >
               Try now free
             </Link>
