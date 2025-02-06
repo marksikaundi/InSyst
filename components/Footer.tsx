@@ -13,7 +13,9 @@ const footerData = [
       { name: "About us", path: "/about" },
       { name: "Terms", path: "/lega/terms" },
       { name: "Privacy Policy", path: "/legal/privacy" },
-      { name: "Contribute", path: "/contribute" },
+      { name: "Cookies", path: "/cookies" },
+      { name: "FAQ", path: "/lega/faq" },
+
     ],
   },
   {
