@@ -8,24 +8,23 @@ import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const footerData = [
   {
-    title: "Legal",
+    title: "Company",
     links: [
       { name: "About us", path: "/about" },
+      { name: "Contribute", path: "/contribute" },
+      { name: "Features", path: "/features" },
+      { name: "Our Story", path: "/our-story" },
+
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
       { name: "Terms", path: "/lega/terms" },
       { name: "Privacy Policy", path: "/legal/privacy" },
       { name: "Cookies", path: "/cookies" },
       { name: "FAQ", path: "/lega/faq" },
 
-    ],
-  },
-  {
-    title: "Links",
-    links: [
-      { name: "Challenge", path: "#" },
-      { name: "Affiliates", path: "#" },
-      { name: "Partner with Us", path: "#" },
-      { name: "Research", path: "#" },
-      { name: "Changelog", path: "#" },
     ],
   },
   // {
