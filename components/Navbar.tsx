@@ -22,10 +22,10 @@ export default function Nav() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="/contribute"
-              className="text-black hover:text-black  hidden md:block"
+              href="/features"
+              className="text-black hover:text-black text-lg  hidden md:block"
             >
-              Contribute
+              Features
             </Link>
 
             <Link
