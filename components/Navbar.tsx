@@ -22,7 +22,7 @@ export default function Nav() {
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="/premium"
+              href="/contribute"
               className="text-black hover:text-black  hidden md:block"
             >
               Contribute
