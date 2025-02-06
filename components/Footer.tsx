@@ -14,7 +14,6 @@ const footerData = [
       { name: "Contribute", path: "/contribute" },
       { name: "Features", path: "/features" },
       { name: "Our Story", path: "/our-story" },
-
     ],
   },
   {
@@ -24,19 +23,8 @@ const footerData = [
       { name: "Privacy Policy", path: "/legal/privacy" },
       { name: "Cookies", path: "/cookies" },
       { name: "FAQ", path: "/lega/faq" },
-
     ],
   },
-  // {
-  //   title: "Resources",
-  //   links: [
-  //     { name: "Books", path: "#" },
-  //     { name: "Sitemap", path: "#" },
-  //     { name: "Tips", path: "#" },
-  //     { name: "Projects", path: "#" },
-  //     { name: "Docs", path: "#" },
-  //   ],
-  // },
 ];
 
 export default function Footer() {
