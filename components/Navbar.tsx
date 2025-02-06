@@ -29,7 +29,7 @@ export default function Nav() {
             </Link>
 
             <Link
-              href="#"
+              href="/try-now"
               className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 text-sm font-medium text-white hover:bg-black"
             >
               Try now free
