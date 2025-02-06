@@ -13,7 +13,7 @@ const footerData = [
       { name: "About us", path: "/about" },
       { name: "Terms", path: "/lega/terms" },
       { name: "Privacy Policy", path: "/legal/privacy" },
-      { name: "FAQ", path: "/legal/faq" },
+      { name: "Contribute", path: "/contribute" },
     ],
   },
   {
@@ -26,16 +26,16 @@ const footerData = [
       { name: "Changelog", path: "#" },
     ],
   },
-  {
-    title: "Resources",
-    links: [
-      { name: "Books", path: "#" },
-      { name: "Sitemap", path: "#" },
-      { name: "Tips", path: "#" },
-      { name: "Projects", path: "#" },
-      { name: "Docs", path: "#" },
-    ],
-  },
+  // {
+  //   title: "Resources",
+  //   links: [
+  //     { name: "Books", path: "#" },
+  //     { name: "Sitemap", path: "#" },
+  //     { name: "Tips", path: "#" },
+  //     { name: "Projects", path: "#" },
+  //     { name: "Docs", path: "#" },
+  //   ],
+  // },
 ];
 
 export default function Footer() {
