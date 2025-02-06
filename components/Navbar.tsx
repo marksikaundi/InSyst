@@ -23,14 +23,14 @@ export default function Nav() {
           <div className="flex items-center gap-4">
             <Link
               href="/features"
-              className="text-black hover:text-black text-lg  hidden md:block"
+              className="text-black hover:text-black text-md  hidden md:block"
             >
               Features
             </Link>
 
             <Link
               href="/try-now"
-              className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 text-sm font-medium text-white hover:bg-black"
+              className="inline-flex h-9 items-center justify-center rounded-md bg-black px-4 text-md font-medium text-white hover:bg-black"
             >
               Try now free
             </Link>
