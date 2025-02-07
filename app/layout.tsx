@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "WebAudit",
-  description: "Use WebAudit to check your site vulnerabilities & a report",
+  description: "WebAudit is a tool to audit your website.",
 };
 
 export default function RootLayout({

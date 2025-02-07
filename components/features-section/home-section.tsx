@@ -66,7 +66,7 @@ export default function HomeSection() {
       {/* Cube Image */}
       <div className="absolute bottom-0 left-1/2 md:top-1/2 md:right-0 md:left-auto transform -translate-x-1/2 md:-translate-y-1/2 md:translate-x-1/4 w-full md:w-auto">
         <Image
-          src="/placeholder.svg?height=600&width=600"
+          src="/pl.svg"
           alt="WebAudit Cube"
           width={600}
           height={600}
