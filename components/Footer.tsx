@@ -19,10 +19,10 @@ const footerData = [
   {
     title: "Legal",
     links: [
-      { name: "Terms", path: "/lega/terms" },
+      { name: "Terms", path: "/legal/terms" },
       { name: "Privacy Policy", path: "/legal/privacy" },
-      { name: "Cookies", path: "/cookies" },
-      { name: "FAQ", path: "/lega/faq" },
+      { name: "Cookies", path: "/legal/cookies" },
+      { name: "FAQ", path: "/legal/faq" },
     ],
   },
 ];
